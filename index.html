@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-blue-100 p-7">
+    <div class="max-w-md mx-auto bg-yellow-400 p-6 rounded shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Dynamic Quiz Generator</h1>
+        <div>
+            <label class="block mb-2" for="topic">Select Topic:</label>
+            <select id="topic" class="block w-full border border-blue-300 p-2 rounded mb-4 focus:outline-none">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <!-- <option value="General Knowledge">General Knowledge</option> -->
+                
+            </select>
+        </div>
+        <div>
+            <label class="block mb-2" for="difficulty">Select Difficulty:</label>
+            <select id="difficulty" class="block w-full border border-blue-300 p-2 rounded mb-4 focus:outline-none">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <button id="generateBtn" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Generate Quiz</button>
+        <div id="quizContainer" class="mt-8"></div>
+        <button id="submitBtn" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4 hidden">Submit Quiz</button>
+        <div id="feedbackContainer" class="mt-4 hidden"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
